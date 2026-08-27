@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vibe Fitness Gulberg | Premium Fitness in Islamabad</title>
+
+<meta
+name="description"
+content="Vibe Fitness Gulberg, Islamabad. Train with purpose. Discover a modern fitness experience in Gulberg Residencia."
+
+>
+
+<meta
+name="keywords"
+content="Vibe Fitness Gulberg, gym Gulberg Islamabad, fitness Gulberg Islamabad, gym in Gulberg Residencia, fitness center Islamabad"
+
+>
+
+  <meta name="author" content="Vibe Fitness Gulberg">
+
+  <meta property="og:title" content="Vibe Fitness Gulberg | Islamabad">
+  <meta
+    property="og:description"
+    content="Train different. Live different. Vibe Fitness Gulberg, Islamabad."
+  >
+  <meta property="og:type" content="website">
+
+  <link rel="canonical" href="https://your-domain.com/">
+
+  <!-- Google Font -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    :root {
+      --black: #080808;
+      --dark: #101010;
+      --dark-2: #171717;
+      --white: #f5f5f5;
+      --muted: #a1a1a1;
+      --lime: #d8ff3e;
+      --border: rgba(255,255,255,0.10);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: "Inter", sans-serif;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    /* =========================
+       NAVIGATION
+    ========================= */
+
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 24px 5%;
+
+      transition: 0.4s ease;
+    }
+
+    .nav.scrolled {
+      background: rgba(8,8,8,0.92);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .logo {
+      font-family: "Oswald", sans-serif;
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: var(--lime);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .nav-links a {
+      opacity: 0.8;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+      color: var(--lime);
+    }
+
+    .nav-cta {
+      background: var(--lime);
+      color: #000;
+      padding: 13px 22px;
+      font-weight: 800;
+      border-radius: 2px;
+    }
+
+    .menu {
+      display: none;
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+      min-height: 100vh;
+      position: relative;
+
+      display: flex;
+      align-items: center;
+
+      overflow: hidden;
+
+      background:
+        linear-gradient(
+          90deg,
+          rgba(0,0,0,0.92) 0%,
+          rgba(0,0,0,0.70) 45%,
+          rgba(0,0,0,0.35) 100%
+        ),
+        url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=2200&q=90")
+        center/cover;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          transparent 60%,
+          var(--black) 100%
+        );
+
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    .eyebrow {
+      color: var(--lime);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-family: "Oswald", sans-serif;
+      font-size: clamp(70px, 11vw, 170px);
+      line-height: 0.82;
+      text-transform: uppercase;
+      letter-spacing: -4px;
+      max-width: 1000px;
+    }
+
+    .hero h1 span {
+      color: var(--lime);
+    }
+
+    .hero-sub {
+      margin-top: 35px;
+      max-width: 500px;
+      color: #d0d0d0;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      margin-top: 35px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 17px 28px;
+      border: 1px solid var(--lime);
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: var(--lime);
+      color: #000;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+    }
+
+    .hero-location {
+      position: absolute;
+      bottom: 35px;
+      right: 5%;
+      z-index: 5;
+
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #aaa;
+    }
+
+    /* =========================
+       INTRO
+    ========================= */
+
+    section {
+      padding: 120px 5%;
+    }
+
+    .intro {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .section-number {
+      color: var(--lime);
+      font-family: "Oswald", sans-serif;
+      font-size: 14px;
+      letter-spacing: 3px;
+      margin-bottom: 20px;
+    }
+
+    .big-heading {
+      font-family: "Oswald", sans-serif;
+      font-size: clamp(50px, 7vw, 100px);
+      line-height: 0.9;
+      text-transform: uppercase;
+    }
+
+    .big-heading span {
+      color: var(--lime);
+    }
+
+    .intro-copy {
+      color: var(--muted);
+      line-height: 1.9;
+      font-size: 16px;
+    }
+
+    /* =========================
+       EXPERIENCE
+    ========================= */
+
+    .dark-section {
+      background: var(--dark);
+    }
+
+    .section-heading {
+      max-width: 1300px;
+      margin: auto;
+      margin-bottom: 60px;
+    }
+
+    .cards {
+      max-width: 1300px;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      min-height: 430px;
+      position: relative;
+      overflow: hidden;
+
+      background: #222;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      padding: 35px;
+
+      transition: 0.5s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      background:
+        linear-gradient(
+          transparent 20%,
+          rgba(0,0,0,0.9)
+        );
+
+      z-index: 1;
+    }
+
+    .card:nth-child(1) {
+      background:
+        url("https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1000&q=85")
+        center/cover;
+    }
+
+    .card:nth-child(2) {
+      background:
+        url("https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1000&q=85")
+        center/cover;
+    }
+
+    .card:nth-child(3) {
+      background:
+        url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=85")
+        center/cover;
+    }
+
+    .card-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .card-number {
+      color: var(--lime);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      font-family: "Oswald", sans-serif;
+      font-size: 42px;
+      text-transform: uppercase;
+    }
+
+    .card p {
+      color: #bbb;
+      margin-top: 10px;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    /* =========================
+       STATEMENT
+    ========================= */
+
+    .statement {
+      min-height: 70vh;
+
+      display: flex;
+      align-items: center;
+
+      background:
+        linear-gradient(
+          rgba(0,0,0,0.75),
+          rgba(0,0,0,0.9)
+        ),
+        url("https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&fit=crop&w=2200&q=90")
+        center/cover fixed;
+    }
+
+    .statement-inner {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .statement h2 {
+      font-family: "Oswald", sans-serif;
+      font-size: clamp(60px, 10vw, 150px);
+      line-height: 0.85;
+      text-transform: uppercase;
+    }
+
+    .statement h2 span {
+      color: var(--lime);
+    }
+
+    /* =========================
+       STATS
+    ========================= */
+
+    .stats {
+      max-width: 1300px;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .stat {
+      padding: 50px 25px;
+      border-right: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .stat:last-child {
+      border-right: 0;
+    }
+
+    .stat strong {
+      display: block;
+
+      font-family: "Oswald", sans-serif;
+      font-size: 55px;
+      color: var(--lime);
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 8px;
+
+      color: #aaa;
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* =========================
+       LOCATION
+    ========================= */
+
+    .location {
+      max-width: 1300px;
+      margin: auto;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+
+    .location-box {
+      border: 1px solid var(--border);
+      padding: 45px;
+    }
+
+    .location-box h3 {
+      font-family: "Oswald", sans-serif;
+      font-size: 42px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .location-box p {
+      color: #aaa;
+      line-height: 1.8;
+    }
+
+    .location-list {
+      margin-top: 30px;
+      list-style: none;
+    }
+
+    .location-list li {
+      padding: 15px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      color: #bbb;
+    }
+
+    .location-list strong {
+      color: white;
+    }
+
+    /* =========================
+       CTA
+    ========================= */
+
+    .cta {
+      background: var(--lime);
+      color: #000;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-family: "Oswald", sans-serif;
+      font-size: clamp(60px, 10vw, 140px);
+      line-height: 0.85;
+      text-transform: uppercase;
+    }
+
+    .cta p {
+      max-width: 500px;
+      margin: 30px auto;
+      line-height: 1.7;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: #000;
+      color: white;
+      padding: 18px 35px;
+
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      transition: 0.3s;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+      padding: 50px 5%;
+      background: #050505;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      color: #777;
+      font-size: 12px;
+    }
+
+    footer strong {
+      color: white;
+      font-family: "Oswald", sans-serif;
+      letter-spacing: 2px;
+      font-size: 18px;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================= */
+
+    @media (max-width: 900px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .menu {
+        display: block;
+      }
+
+      .intro,
+      .location {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stat:nth-child(2) {
+        border-right: 0;
+      }
+
+      .stat:nth-child(-n+2) {
+        border-bottom: 1px solid var(--border);
+      }
+
+      .hero h1 {
+        letter-spacing: -2px;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      section {
+        padding: 80px 6%;
+      }
+
+      .nav {
+        padding: 18px 6%;
+      }
+
+      .nav-cta {
+        display: none;
+      }
+
+      .hero {
+        min-height: 90vh;
+      }
+
+      .hero-content {
+        width: 88%;
+      }
+
+      .hero h1 {
+        font-size: 72px;
+      }
+
+      .hero-sub {
+        font-size: 14px;
+      }
+
+      .hero-location {
+        display: none;
+      }
+
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .stat {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .stat:last-child {
+        border-bottom: 0;
+      }
+
+      .location-box {
+        padding: 30px;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+
+  <nav class="nav" id="navbar">
+
+```
+<a href="#" class="logo">
+  VIBE<span>.</span>
+</a>
+
+<div class="nav-links">
+  <a href="#experience">Experience</a>
+  <a href="#about">About</a>
+  <a href="#location">Location</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact" class="nav-cta">Join Now</a>
+</div>
+
+<div class="menu">☰</div>
+```
+
+  </nav>
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <header class="hero">
+
+```
+<div class="hero-content">
+
+  <div class="eyebrow">
+    Gulberg • Islamabad
+  </div>
+
+  <h1>
+    FIND<br>
+    YOUR<br>
+    <span>VIBE.</span>
+  </h1>
+
+  <p class="hero-sub">
+    A place to train with purpose, push your limits,
+    and become stronger than yesterday.
+  </p>
+
+  <div class="hero-actions">
+
+    <a href="#contact" class="btn btn-primary">
+      Start Your Journey
+    </a>
+
+    <a href="#experience" class="btn">
+      Explore Vibe
+    </a>
+
+  </div>
+
+</div>
+
+<div class="hero-location">
+  Gulberg Residencia • Islamabad
+</div>
+```
+
+  </header>
+
+  <!-- =========================
+       ABOUT
+  ========================== -->
+
+  <section id="about">
+
+```
+<div class="intro">
+
+  <div>
+
+    <div class="section-number">
+      01 / THE VIBE
+    </div>
+
+    <h2 class="big-heading">
+      MORE THAN<br>
+      A <span>GYM.</span>
+    </h2>
+
+  </div>
+
+  <div class="intro-copy">
+
+    <p>
+      Vibe Fitness is built around one simple idea:
+      your fitness journey should feel like your own.
+    </p>
+
+    <br>
+
+    <p>
+      Whether your goal is strength, conditioning,
+      confidence, consistency, or simply becoming
+      a healthier version of yourself, your journey
+      starts with showing up.
+    </p>
+
+    <br>
+
+    <p>
+      <strong style="color:white;">
+        VIBE FITNESS GULBERG
+      </strong><br>
+      Gulberg Residencia, Islamabad.
+    </p>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================
+       EXPERIENCE
+  ========================== -->
+
+  <section class="dark-section" id="experience">
+
+```
+<div class="section-heading">
+
+  <div class="section-number">
+    02 / TRAIN
+  </div>
+
+  <h2 class="big-heading">
+    YOUR<br>
+    <span>GOALS.</span>
+  </h2>
+
+</div>
+
+<div class="cards">
+
+  <article class="card">
+
+    <div class="card-content">
+
+      <div class="card-number">
+        01
+      </div>
+
+      <h3>Strength</h3>
+
+      <p>
+        Build strength, discipline and confidence
+        through purposeful training.
+      </p>
+
+    </div>
+
+  </article>
+
+
+  <article class="card">
+
+    <div class="card-content">
+
+      <div class="card-number">
+        02
+      </div>
+
+      <h3>Fitness</h3>
+
+      <p>
+        Improve your conditioning and create
+        a stronger everyday you.
+      </p>
+
+    </div>
+
+  </article>
+
+
+  <article class="card">
+
+    <div class="card-content">
+
+      <div class="card-number">
+        03
+      </div>
+
+      <h3>Results</h3>
+
+      <p>
+        Set a goal. Build consistency.
+        Track your progress.
+      </p>
+
+    </div>
+
+  </article>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================
+       STATEMENT
+  ========================== -->
+
+  <section class="statement">
+
+```
+<div class="statement-inner">
+
+  <div class="section-number">
+    03 / THE MINDSET
+  </div>
+
+  <h2>
+    TRAIN<br>
+    <span>DIFFERENT.</span>
+  </h2>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================
+       STATS
+  ========================== -->
+
+  <section>
+
+```
+<div class="stats">
+
+  <div class="stat">
+    <strong>01</strong>
+    <span>Your Goal</span>
+  </div>
+
+  <div class="stat">
+    <strong>02</strong>
+    <span>Your Plan</span>
+  </div>
+
+  <div class="stat">
+    <strong>03</strong>
+    <span>Your Progress</span>
+  </div>
+
+  <div class="stat">
+    <strong>04</strong>
+    <span>Your Vibe</span>
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================
+       LOCATION
+  ========================== -->
+
+  <section class="dark-section" id="location">
+
+```
+<div class="location">
+
+  <div>
+
+    <div class="section-number">
+      04 / FIND US
+    </div>
+
+    <h2 class="big-heading">
+      YOUR<br>
+      <span>SPACE.</span>
+    </h2>
+
+  </div>
+
+
+  <div class="location-box">
+
+    <h3>
+      Vibe Fitness
+    </h3>
+
+    <p>
+      CT-2, Gulberg Residencia,<br>
+      Block D Markaz,<br>
+      Islamabad, Pakistan.
+    </p>
+
+    <ul class="location-list">
+
+      <li>
+        <span>Area</span>
+        <strong>Gulberg Islamabad</strong>
+      </li>
+
+      <li>
+        <span>City</span>
+        <strong>Islamabad</strong>
+      </li>
+
+      <li>
+        <span>Experience</span>
+        <strong>Fitness</strong>
+      </li>
+
+    </ul>
+
+    <br>
+
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=Vibe+Fitness+Gulberg+Islamabad"
+      target="_blank"
+      class="btn btn-primary"
+      style="display:inline-block;"
+    >
+      Get Directions
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- =========================
+       CTA
+  ========================== -->
+
+  <section class="cta" id="contact">
+
+```
+<div class="section-number" style="color:#000;">
+  05 / YOUR TURN
+</div>
+
+<h2>
+  READY<br>
+  TO <span style="color:white;">VIBE?</span>
+</h2>
+
+<p>
+  Your next chapter doesn't start tomorrow.
+  It starts with the decision to show up today.
+</p>
+
+<a
+  href="https://www.instagram.com/vibe_fitness_gulberg/"
+  target="_blank"
+  class="cta-button"
+>
+  Connect With Vibe Fitness
+</a>
+```
+
+  </section>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+```
+<strong>
+  VIBE FITNESS
+</strong>
+
+<span>
+  © 2026 Vibe Fitness Gulberg • Islamabad
+</span>
+
+<span>
+  Gulberg Residencia
+</span>
+```
+
+  </footer>
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script>
+
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>
